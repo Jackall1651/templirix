@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://127.0.0.1:8000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="initial-scale=1.0">
+    
+    <link rel="shortcut icon" href="http://127.0.0.1:8000/static/polls/favicon.ico">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100px;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <title>HoleFix!</title>
+    <link rel="stylesheet" type="text/css" href="./HoleFix!_files/style.css"><script type="text/javascript" charset="UTF-8" src="./HoleFix!_files/common.js"></script><script type="text/javascript" charset="UTF-8" src="./HoleFix!_files/util.js"></script></head>
+
+<body><div class="navbar">
+	<h1>HoleFix!</h1>
+</div>
+<div class="body">
+	
+    
+		<br>
+        <div class="card">
+			
+        <div style="width:90%;text-align:right;padding-left:5%;padding-right:5%;font-size:15px;"><i>2 votes</i></div>
+		
+        <div style="width:90%;text-align:left;padding-left:5%;padding-right:5%;"><div class="title"><a href="http://127.0.0.1:8000/11/">BLANK</a></div>
+        <div style="font-size:15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div>
+		</div>
+    
+		<br>
+        <div class="card">
+			
+        <div style="width:90%;text-align:right;padding-left:5%;padding-right:5%;font-size:15px;"><i>17 votes</i></div>
+		
+        <div style="width:90%;text-align:left;padding-left:5%;padding-right:5%;"><div class="title"><a href="http://127.0.0.1:8000/10/">pothole at sheffield dr.</a></div>
+        <div style="font-size:15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div>
+		</div>
+    
+		<br>
+        <div class="card">
+			
+        <div style="width:90%;text-align:right;padding-left:5%;padding-right:5%;font-size:15px;"><i>26 votes</i></div>
+		
+        <div style="width:90%;text-align:left;padding-left:5%;padding-right:5%;"><div class="title"><a href="http://127.0.0.1:8000/9/">pothole at I-55</a></div>
+        <div style="font-size:15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div>
+		</div>
+    
+		<br>
+        <div class="card">
+			
+        <div style="width:90%;text-align:right;padding-left:5%;padding-right:5%;font-size:15px;"><i>22 votes</i></div>
+		
+        <div style="width:90%;text-align:left;padding-left:5%;padding-right:5%;"><div class="title"><a href="http://127.0.0.1:8000/8/">pothole at dogwood dr.</a></div>
+        <div style="font-size:15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div>
+		</div>
+    
+		<br>
+        <div class="card">
+			
+        <div style="width:90%;text-align:right;padding-left:5%;padding-right:5%;font-size:15px;"><i>14 votes</i></div>
+		
+        <div style="width:90%;text-align:left;padding-left:5%;padding-right:5%;"><div class="title"><a href="http://127.0.0.1:8000/7/">pothole at eastover dr.</a></div>
+        <div style="font-size:15px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div></div>
+		</div>
+    
+
+<br>
+</div>
+<script>
+      // Note: This example requires that you consent to location sharing when
+      // prompted by your browser. If you see the error "The Geolocation service
+      // failed.", it means you probably did not give permission for the browser to
+      // locate you.
+      var map, infoWindow;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: -34.397, lng: 150.644},
+          zoom: 6
+        });
+        infoWindow = new google.maps.InfoWindow;
+
+        // Try HTML5 geolocation.
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(function(position) {
+            var pos = {
+              lat: position.coords.latitude,
+              lng: position.coords.longitude
+            };
+
+            infoWindow.setPosition(pos);
+            infoWindow.setContent('Location found.');
+            infoWindow.open(map);
+            map.setCenter(pos);
+          }, function() {
+            handleLocationError(true, infoWindow, map.getCenter());
+          });
+        } else {
+          // Browser doesn't support Geolocation
+          handleLocationError(false, infoWindow, map.getCenter());
+        }
+      }
+
+      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+        infoWindow.setPosition(pos);
+        infoWindow.setContent(browserHasGeolocation ?
+                              'Error: The Geolocation service failed.' :
+                              'Error: Your browser doesn\'t support geolocation.');
+        infoWindow.open(map);
+      }
+    </script>
+    <script src="./HoleFix!_files/js" async="" defer=""></script>
+
+</body></html>
